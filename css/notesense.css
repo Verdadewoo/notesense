@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap");
+
+body{
+  margin: 0;
+  overflow-y:overlay;
+  background-color: #202124;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.nav-transparent{
+  background-color: transparent !important;
+  height: 4rem;
+}
+.line{
+  border-left: 1px solid rgb(255, 255, 255);
+  padding-left: 10px; /* Optional: add some left padding to separate the content from the line */
+}
+.wrapper{
+  display: grid;
+  min-height: calc(100vh - 4rem);
+  place-items: center; /* Center both horizontally and vertically */
+}
+.wrapper-second {
+  display: grid;
+  min-height: 100vh;
+  place-items: center; /* Center both horizontally and vertically */
+  overflow-x: hidden;
+}
+.icon-main{
+  animation-name: hover;
+  animation: hover 5s ease-in-out infinite;
+}
+.center{
+  display: grid;
+  place-items: center;
+}
+
+@keyframes hover {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(5px, -10px) rotate(3deg);
+  }
+
+  40% {
+    transform: translate(-5px, 10px) rotate(-3deg);
+  }
+
+  60% {
+    transform: translate(5px, -10px) rotate(3deg);
+  }
+
+  80% {
+    transform: translate(-5px, 10px) rotate(-3deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.circle{
+  width: 3rem; 
+  height: 3rem; 
+  border-radius: 50%; 
+  border: 1px solid rgb(255, 255, 255);
+}
+.footer{
+  height: 50vh;
+  display: grid;
+  place-items: center; 
+  background-color: black;
+}
+
+.text-about{ max-width: 20rem; }
+.text-align{ text-align: left; }
+.btn{ border-radius: 0; }
+.btn-success{ background-color: #08A285; }
+.card{ background-color: #B0ADA2; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- Scrollbar content goes here ------------------------ */
+
+/* Set the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0); /* transparent */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8888882f; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Position the scrollbar */
+::-webkit-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+
+

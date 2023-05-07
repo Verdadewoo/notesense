@@ -1,0 +1,123 @@
+body{
+  margin: 0;
+  overflow-y:overlay;
+  background-color: #202124;
+  color: white;
+}
+.center{
+  display: grid;
+  place-items: center;
+}
+.sidenav h2, h5{
+  padding: 0px 0px 0px 16px;
+  color: #08A285;
+}
+.sidenav p{
+  padding: 0px 0px 0px 16px;
+  margin: 0;
+  color: #818181;
+}
+.main{
+  margin-top: 3rem;
+}
+.form-control{
+  background: #202124 !important;
+  border: 1px solid #202124 !important;
+  color: #E0E1DD !important;
+  width: 100%;
+  border: 1px solid red;
+}
+.title{ font-size: 1.5rem; }
+.btn{ 
+  color: #08A285;
+  font-size: 1.3rem;
+  margin-right: 3rem;
+}
+.error_message{
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: rgb(211, 41, 41);
+}
+.selected{
+  color: white !important;
+}
+.btn:hover{ color: #08A285; }
+.text-area-custom{ height: 60%; }
+.sidenav hr{ margin: 1rem; }
+
+
+
+.sidenav a:last-child {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3rem;
+}
+.sidenav a:last-child:hover {
+  color: #08A285;
+}
+
+.sidenav {
+  height: 100%;
+  width: 12rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 12rem; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* ----------------------- Scrollbar content goes here ------------------------ */
+
+/* Set the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0); /* transparent */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8888882f; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Position the scrollbar */
+::-webkit-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}

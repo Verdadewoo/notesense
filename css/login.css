@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  overflow-y:overlay;
+  background-color: #202124;
+  color: white;
+}
+.form-control{
+  background: #202124 !important;
+  border: 1px solid #415A77 !important;
+  color: #E0E1DD !important;
+}
+.center{
+  display: grid;
+  place-items: center;
+}
+.btn-success{ background-color: #08A285 !important; }
+
